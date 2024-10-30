@@ -10,9 +10,93 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Rinterio</title>
   </head>
-  <body>
-    <h1>Hello world</h1>
+  <body class="p-2 lg:p-0">
+    <!-- header section -->
+    <header class="max-w-screen-xl mx-auto">
+      <nav class="py-5 flex items-center justify-between">
+        <!-- logo container -->
+        <div class="flex gap-3">
+          <!-- logo icon -->
+          <div
+            class="h-10 w-10 bg-green-300 flex items-center justify-center rounded-full"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <h1 class="text-4xl font-bold">Rinterio</h1>
+        </div>
+        <!-- links -->
+        <div class="hidden md:block">
+          <ul class="flex items-center space-x-10 text-[18px]">
+            <li>
+              <a class="hover:font-bold transition-all duration-300" href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="hover:font-bold transition-all duration-300" href="#"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="hover:font-bold transition-all duration-300" href="#"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="hover:font-bold transition-all duration-300" href="#"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a class="hover:font-bold transition-all duration-300" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- action buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <!-- icons container -->
+          <div class="flex items-center gap-3">
+            <div
+              class="cursor-pointer h-10 w-10 bg-gray-100 flex items-center justify-center rounded-full"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="cursor-pointer h-10 w-10 bg-gray-100 flex items-center justify-center rounded-full"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+          <button
+            class="text-black font-semibold bg-[#ABEF5F] px-5 py-2 hover:bg-black transition-all hover:text-white duration-300 rounded-full flex items-center gap-3"
+          >
+            Book Consult
+            <i
+              class="fa-solid fa-arrow-right bg-black text-white py-2 px-2 rounded-full"
+            ></i>
+          </button>
+        </div>
+        <!-- todo: nav responsive hamburger menu -->
+        <div class="block lg:hidden">
+          <i class="fa-solid fa-bars text-2xl text-[#ABEF5F]"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main></main>
+    <!-- footer section  -->
+    <footer></footer>
   </body>
 </html>
